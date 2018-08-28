@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./lib/bootstrap-3.3.7/css/bootstrap.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="clearfix">
+    <div class="fl">
+      <span>分诊管理系统</span>
+    </div>
+    <div class="fr">
+      <div class="fl mime">
+        <p class="glyphicon glyphicon-user"></p>
+        <p>我的</p>
+      </div>
+      <div class="fr logout">
+        <p class="glyphicon glyphicon-align-justify"></p>
+        <p>注销</p>
+      </div>
+    </div>
+  </header>
+  <main class="clearfix">
+    <aside class="fl">
+      <div class="tree_wrap">
+        <div class="dropdown">
+          <div class="parent_node"><span class="caret"></span> 队列</div>
+          <ul class="displayNone">
+            <li>胎心监护</li>
+            <li>脐流血</li>
+            <li>刘丽专家</li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <div class="parent_node"><span class="caret"></span> 队列</div>
+          <ul class="displayNone">
+            <li>胎心监护</li>
+            <li>脐流血</li>
+            <li>刘丽专家</li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <div class="parent_node"><span class="caret"></span> 队列</div>
+          <ul class="displayNone">
+            <li>胎心监护</li>
+            <li>脐流血</li>
+            <li>刘丽专家</li>
+          </ul>
+        </div>
+      </div>
+      <div class="information_wrap">
+        <div>
+          <h4>挂号信息</h4>
+          <table style="width: 100%;" class="table">
+            <tr>
+              <td width="40%"><i class="glyphicon glyphicon-certificate"></i> 挂号</td>
+              <td><strong>50人</strong></td>
+            </tr>
+            <tr>
+              <td><i class="glyphicon glyphicon-certificate"></i> 完诊</td>
+              <td><strong>20人</strong></td>
+            </tr>
+            <tr>
+              <td><i class="glyphicon glyphicon-certificate"></i> 候诊</td>
+              <td><strong>30人</strong></td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <h4>就诊信息</h4>
+          <table style="width: 100%;" class="table">
+            <tr>
+              <td width="40%"><i class="glyphicon glyphicon-certificate"></i> 平均候诊</td>
+              <td><strong>30分钟</strong></td>
+            </tr>
+            <tr>
+              <td><i class="glyphicon glyphicon-certificate"></i> 看诊速度</td>
+              <td><strong>6人/每小时</strong></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </aside>
+    <div class="index_content">
+      <div class="content_header">
+        <ul>
+          <li class="fetch_num">
+            <i class="glyphicon glyphicon-plus"></i> 取号</li>
+          <li>
+            <i class="glyphicon glyphicon-plus"></i>
+            <span class="input-group-sm" style="width:50px;">
+              <input type="text" class="form-control" style="width: 50px;display: inline-block;">
+            </span> 批量呼叫
+          </li>
+          <li>
+            <i class="glyphicon glyphicon-plus"></i> 重呼</li>
+          <li onclick="window.location.reload()">
+            <i class="glyphicon glyphicon-plus"></i> 刷新</li>
+        </ul>
+      </div>
+      <div class="content_table">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>序号</th>
+              <th>队列号</th>
+              <th>姓名</th>
+              <th>挂号时间</th>
+              <th>状态</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>1001</td>
+              <td>张三</td>
+              <td>08:01</td>
+              <td>候诊</td>
+              <td>
+                <button type="button" class="btn btn-primary btn-sm">呼叫</button>
+                <button type="button" class="btn btn-primary btn-sm discard_Num" onclick="discardNum(this)">弃号</button>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>1001</td>
+              <td>张三</td>
+              <td>08:01</td>
+              <td>候诊</td>
+              <td>
+                <button type="button" class="btn btn-primary btn-sm">呼叫</button>
+                <button type="button" class="btn btn-primary btn-sm">弃号</button>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>1001</td>
+              <td>张三</td>
+              <td>08:01</td>
+              <td>候诊</td>
+              <td>
+                <button type="button" class="btn btn-primary btn-sm">呼叫</button>
+                <button type="button" class="btn btn-primary btn-sm">弃号</button>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>1001</td>
+              <td>张三</td>
+              <td>08:01</td>
+              <td>候诊</td>
+              <td>
+                <button type="button" class="btn btn-primary btn-sm">呼叫</button>
+                <button type="button" class="btn btn-primary btn-sm">弃号</button>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>1001</td>
+              <td>张三</td>
+              <td>08:01</td>
+              <td>候诊</td>
+              <td>
+                <button type="button" class="btn btn-primary btn-sm">呼叫</button>
+                <button type="button" class="btn btn-primary btn-sm">弃号</button>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>1001</td>
+              <td>张三</td>
+              <td>08:01</td>
+              <td>候诊</td>
+              <td>
+                <button type="button" class="btn btn-primary btn-sm">呼叫</button>
+                <button type="button" class="btn btn-primary btn-sm">弃号</button>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>1001</td>
+              <td>张三</td>
+              <td>08:01</td>
+              <td>候诊</td>
+              <td>
+                <button type="button" class="btn btn-primary btn-sm">呼叫</button>
+                <button type="button" class="btn btn-primary btn-sm">弃号</button>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>1001</td>
+              <td>张三</td>
+              <td>08:01</td>
+              <td>候诊</td>
+              <td>
+                <button type="button" class="btn btn-primary btn-sm">呼叫</button>
+                <button type="button" class="btn btn-primary btn-sm">弃号</button>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>1001</td>
+              <td>张三</td>
+              <td>08:01</td>
+              <td>候诊</td>
+              <td>
+                <button type="button" class="btn btn-primary btn-sm">呼叫</button>
+                <button type="button" class="btn btn-primary btn-sm">弃号</button>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>1001</td>
+              <td>张三</td>
+              <td>08:01</td>
+              <td>候诊</td>
+              <td>
+                <button type="button" class="btn btn-primary btn-sm">呼叫</button>
+                <button type="button" class="btn btn-primary btn-sm">弃号</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            <li>
+              <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a href="#">4</a>
+            </li>
+            <li>
+              <a href="#">5</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>CopyRight 上海智赢健康科技有限公司 2018</p>
+  </footer>
+  <!-- 弃号确定弹框 -->
+  <div class="discardedNumber_cover cover displayNone">
+    <div class="discardedNumber">
+      <div class="discardedNumber_title">
+        <i class="glyphicon glyphicon-remove closeDisCover" onclick="discardedNumClose()"></i> 弃号</div>
+      <p>您确定将 <span>1001</span> 号弃号吗？</p>
+      <div class="btn_wrap">
+        <button type="button" class="btn btn-primary">确定</button>
+        <button type="button" class="btn btn-default" onclick="discardedNumClose()">取消</button>
+      </div>
+    </div>
+  </div>
+  <!-- 提示框 -->
+  <div class="alert alert-success alert-dismissible" role="alert" style="display: none;">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    正在取号，请稍等...
+  </div>
+  <span class="search_appear">
+    <i class="glyphicon glyphicon-chevron-left"></i>
+  </span>
+  <!-- 右侧弹框 -->
+  <div class="search_wrap">
+    <div class="search_main">
+      <div class="form-group form-inline" style="margin-bottom: 30px;">
+        <label for="inputEmail3">卡号</label>
+        <span>
+          <input type="text" class="form-control" id="inputEmail3" placeholder="">
+        </span>
+        <span>
+          <button class="btn btn-primary btn-sm" style="margin-left: 20px;">读卡</button>
+        </span>
+      </div>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>队列号</th>
+            <th>姓名</th>
+            <th>状态</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1001</td>
+            <td>张三</td>
+            <td>候诊</td>
+            <td>
+              <button type="button" class="btn btn-primary btn-sm">召回</button>
+            </td>
+          </tr>
+          <tr>
+            <td>1001</td>
+            <td>张三</td>
+            <td>候诊</td>
+            <td>
+              <button type="button" class="btn btn-primary btn-sm">召回</button>
+            </td>
+          </tr>
+          <tr>
+            <td>1001</td>
+            <td>张三</td>
+            <td>候诊</td>
+            <td>
+              <button type="button" class="btn btn-primary btn-sm">召回</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script src="./lib/bootstrap-3.3.7/js/bootstrap.js"></script>
+<script src="./js/index.js"></script>
+
+</html>

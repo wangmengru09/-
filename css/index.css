@@ -1,0 +1,224 @@
+body {
+  padding: 80px 0 50px 0;
+  overflow: hidden;
+  /* position: relative; */
+}
+header {
+  height: 80px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background-color: #01588D;
+  padding: 0 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header span {
+  line-height: 80px;
+}
+header .glyphicon {
+  font-size: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+header .mime,
+header .logout {
+  cursor: pointer;
+}
+header .logout {
+  margin-left: 30px;
+}
+
+/* 底部 */
+footer {
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  background-color: #01588D;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+footer p {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+main {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+aside {
+  width: 300px;
+}
+aside .tree_wrap, 
+aside .information_wrap {
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  overflow: auto;
+}
+aside .tree_wrap {
+  padding: 30px;
+}
+
+/* 树结构 */
+.tree_wrap .parent_node {
+  cursor: pointer;
+}
+.tree_wrap ul {
+  padding-left: 20px;
+}
+.tree_wrap ul li {
+  padding: 2px 0;
+}
+
+/* 就诊信息 */
+aside .information_wrap {
+  margin-top: 3px;
+}
+.information_wrap h4 {
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+.information_wrap table {
+  text-align: center;
+}
+.information_wrap table strong {
+  font-size: 18px;
+}
+.information_wrap .table > tbody > tr > td {
+  border: 0;
+}
+
+/* 主要内容区域 */
+.index_content {
+  margin-left: 300px;
+}
+.content_header {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  background-color: #e3e4e5;
+}
+.content_header ul {
+  margin: 0;
+}
+.content_header li {
+  float: left;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.content_header li:last-child {
+  float: right;
+}
+.content_table {
+  padding: 30px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.content_table thead th {
+  text-align: center;
+}
+.content_table .table > tbody > tr > td {
+  vertical-align: middle;
+  padding: 6px 8px;
+}
+
+/* 弹框 */
+.cover {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.discardedNumber {
+  width: 450px;
+  height: 300px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.discardedNumber_title {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  padding: 0 15px 0 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #e3e4e5;
+}
+.discardedNumber_title i {
+  float: right;
+  line-height: 40px;;
+  cursor: pointer;
+}
+.discardedNumber p {
+  font-size: 20px;
+  text-align: center;
+  padding: 50px;
+}
+.discardedNumber .btn_wrap {
+  text-align: center;
+  margin-top: 20px;
+}
+.discardedNumber .btn_wrap .btn {
+  padding: 8px 50px;
+}
+.discardedNumber .btn_wrap .btn-primary {
+  margin-right: 30px;
+}
+
+/* 提示框 */
+.alert {
+  width: 500px;
+  display: block;
+  text-align: center;
+  position: fixed;
+  top: 18%;
+  left: 50%;
+  padding: 20px !important;
+  transform: translateX(-50%);
+}
+
+/* 右侧弹框 */
+.search_appear {
+  font-size: 22px;
+  color: #000;
+  cursor: pointer;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 8;
+  transform: translateY(-50%);
+}
+.right300 {
+  right: 400px;
+}
+.right0 {
+  right: 0;
+}
+.search_wrap {
+  padding: 80px 0 50px 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -400px;
+}
+.search_main {
+  width: 400px;
+  height: 100%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  background-color: #fff;
+}
